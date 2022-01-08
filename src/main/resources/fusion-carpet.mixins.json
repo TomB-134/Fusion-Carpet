@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "fusion_carpet.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "CrashReport_noopMixin",
+    "ItemEntityMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

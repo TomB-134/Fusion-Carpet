@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "fusion-carpet",
+  "version": "0.0.1",
+
+  "name": "Fusion SMP carpet extension",
+  "description": "",
+  "authors": [
+    "TomB_134"
+  ],
+  "contact": {
+    "homepage": "https://web.me/",
+    "sources": "https://github.com/gnembon/fabric-carpet-extension-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/fusion-carpet/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+    ]
+  },
+  "mixins": [
+    "fusion-carpet.mixins.json"
+  ],
+
+  "depends": {
+    "minecraft": "1.18.x",
+    "fabricloader": ">=0.12.12",
+    "carpet": "*"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
