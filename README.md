@@ -1,7 +1,7 @@
 # Fusion Carpet Extension
 Carpet Extension for the Fusion SMP
 
-#Settings
+# Settings
 ## Simulation Distance
 Set the simulation distance of the server without a restart.
 Set to 0 to not override the value in server settings. 
