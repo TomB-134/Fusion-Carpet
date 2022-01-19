@@ -6,15 +6,23 @@ import carpet.settings.SettingsManager;
 import carpet.utils.Messenger;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
+import net.fabricmc.api.ModInitializer;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.network.ServerPlayerEntity;
 
-public class FusionCarpet implements CarpetExtension
+public class FusionCarpet implements CarpetExtension, ModInitializer
 {
-    public static void noop() { }
     private static SettingsManager mySettingManager;
-    static
+
+    @Override
+    public String version()
+    {
+        return "Fusion Carpet";
+    }
+
+    @Override
+    public void onInitialize()
     {
         mySettingManager = new SettingsManager("1.0","fusion-carpet","Fusion Carpet");
         CarpetServer.manageExtension(new FusionCarpet());
